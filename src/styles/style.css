@@ -30,14 +30,17 @@
 }
 
 .font {
-  font: "OpenSans-Regular" 16px/1.6em var(--dark), sans-serif;
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: var(--dark);
 }
 
-.h-font {
-  font-family: Neucha, sans-serif;
+.m-0 {
+  margin: 0; 
 }
 
-.fs-16px {
+.fs-16 {
   font-size: 16px;
 }
 
@@ -53,6 +56,11 @@
   line-height: 1.2em;
 }
 
+.h-font {
+  font-family: Neucha, sans-serif;
+  font-weight: 400;
+  line-height: 1.2em;
+}
 .h1-fs {
   font-size: 72px;
 }
@@ -65,11 +73,109 @@
   font-size: 34px;
 }
 
+.z-1 {
+  position: relative;
+  z-index: 100;
+}
+
+.z-3 {
+  position: relative;
+  z-index: 300;
+}
+
+.tdec-none {
+  text-decoration: none;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.body-header {
+  position: absolute; 
+
+  display: block;
+}
+
 .section {
-  width: 1110px;
-  padding: 100px 0;
+  height: 914px;
+  width: 1440px;
+}
+
+.content {
+  padding: 100px 165px;
 }
 
 .section-text-align {
   text-align: center;
+}
+
+.body-header::before {
+  position: absolute;
+  top: 0;
+  z-index: 200;
+
+  display: block;
+  width: 1440px;
+  height: 914px;
+
+  background-image: var(--background-image);
+  background-color: var(--bright);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+
+  content: "";
+}
+
+.center {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.orange {
+  color: var(--main);
+}
+
+.body-header .text {
+  position: relative;
+}
+
+.content .image {
+  position: absolute;
+  top: 55px;
+  right: -105px;
+
+  height: 525px;
+
+  opacity: 0.9;
+}
+
+.text {
+  position: absolute;
+  top: 178px;
+
+  width: 1110px;
+}
+
+.text .p-1 {
+  width: 540px;
+}
+
+.p-2 {
+  position: relative;
+  top: 34px;
+  left: 570px;
+
+  width: 540px;
+}
+
+.button {
+  position: relative;
+  top: 32px;
+
+  padding: 12px 24px;  
+
+  background-color: var(--main);
+  color: var(--lite);
 }
