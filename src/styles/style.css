@@ -78,6 +78,11 @@
   z-index: 100;
 }
 
+.z-2 {
+  position: relative;
+  z-index: 200;
+}
+
 .z-3 {
   position: relative;
   z-index: 300;
@@ -92,7 +97,7 @@
 }
 
 .body-header {
-  position: absolute; 
+
 
   display: block;
 }
@@ -103,6 +108,8 @@
 }
 
 .content {
+  position: relative;
+  height: 714px;
   padding: 100px 165px;
 }
 
@@ -113,7 +120,7 @@
 .body-header::before {
   position: absolute;
   top: 0;
-  z-index: 200;
+  z-index: 100;
 
   display: block;
   width: 1440px;
@@ -147,8 +154,6 @@
   right: -105px;
 
   height: 525px;
-
-  opacity: 0.9;
 }
 
 .text {
@@ -178,4 +183,30 @@
 
   background-color: var(--main);
   color: var(--lite);
+}
+
+.main .s-1 p {
+  margin: 27px 0;
+}
+
+.main .s-1 .video {
+  position: relative;
+  top: 6px;
+
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.main .s-1::before {
+  position: absolute;
+  top: 815px;
+
+  display: block;
+  width: 1440px;
+  height: 100px;
+
+  background-color: var(--main-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  content: "";
 }
