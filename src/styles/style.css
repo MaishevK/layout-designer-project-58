@@ -1,7 +1,7 @@
 /** CSS STYLE **/
 
 @font-face {
-  font-family: "OpenSans-Regular";
+  font-family: OpenSans-Regular;
   src: url("../fonts/OpenSans-Regular.ttf");
 }
 
@@ -29,38 +29,51 @@
   color: var(--white);
 }
 
-.font {
-  font-family: "OpenSans-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 1.6em;
-  color: var(--dark);
-}
-
 .m-0 {
-  margin: 0; 
+  margin: 0;
 }
 
 .fs-16 {
   font-size: 16px;
 }
 
+.fs-34 {
+  font-size: 34px;
+}
+
+.fs-52 {
+  font-size: 52px;
+}
+
 .lineheight {
   line-height: 1.6em;
 }
 
-.text-dark {
+.color-dark {
   color: var(--dark);
 }
 
-.lineheight-1em2{
+.color-lite {
+  color: var(--lite);
+}
+
+.lineheight-1em2 {
   line-height: 1.2em;
 }
 
 .h-font {
-  font-family: Neucha, sans-serif;
   font-weight: 400;
+  font-family: Neucha, sans-serif;
   line-height: 1.2em;
 }
+
+.font {
+  color: var(--dark);
+  font-size: 16px;
+  font-family: OpenSans-Regular, sans-serif;
+  line-height: 1.6em;
+}
+
 .h1-fs {
   font-size: 72px;
 }
@@ -96,19 +109,18 @@
   font-weight: 700;
 }
 
-.body-header {
-
-
+.disp-block {
   display: block;
 }
 
 .section {
-  height: 914px;
   width: 1440px;
+  height: 914px;
 }
 
 .content {
   position: relative;
+
   height: 714px;
   padding: 100px 165px;
 }
@@ -117,7 +129,7 @@
   text-align: center;
 }
 
-.body-header::before {
+.header::before {
   position: absolute;
   top: 0;
   z-index: 100;
@@ -126,8 +138,8 @@
   width: 1440px;
   height: 914px;
 
-  background-image: var(--background-image);
   background-color: var(--bright);
+  background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
@@ -144,18 +156,6 @@
   color: var(--main);
 }
 
-.body-header .text {
-  position: relative;
-}
-
-.content .image {
-  position: absolute;
-  top: 55px;
-  right: -105px;
-
-  height: 525px;
-}
-
 .text {
   position: absolute;
   top: 178px;
@@ -163,11 +163,23 @@
   width: 1110px;
 }
 
-.text .p-1 {
+.header-text {
+  position: relative;
+}
+
+.header-image {
+  position: absolute;
+  top: 55px;
+  right: -105px;
+
+  height: 525px;
+}
+
+.text-p1 {
   width: 540px;
 }
 
-.p-2 {
+.p2 {
   position: relative;
   top: 34px;
   left: 570px;
@@ -179,34 +191,88 @@
   position: relative;
   top: 32px;
 
-  padding: 12px 24px;  
+  padding: 12px 24px;
+
+  color: var(--lite);
 
   background-color: var(--main);
-  color: var(--lite);
 }
 
-.main .s-1 p {
+.s-1-p {
   margin: 27px 0;
 }
 
-.main .s-1 .video {
+.s-1-video {
   position: relative;
   top: 6px;
 
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
-.main .s-1::before {
+.h-691 {
+  height: 691px;
+}
+
+.h-891 {
+  height: 891px;
+}
+
+.s-2 {
+  text-align: left;
+}
+
+.s-2::before {
   position: absolute;
-  top: 815px;
+  top: 1728px;
 
   display: block;
   width: 1440px;
-  height: 100px;
+  height: 991px;
 
   background-color: var(--main-dark);
   background-repeat: no-repeat;
   background-size: cover;
 
   content: "";
+}
+
+.d-flex {
+  display: flex;
+}
+
+.s-2-flex {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.s-2-h-2 {
+  margin-bottom: 16px;
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 24px;
+
+  background-color: var(--lite);
+}
+
+.card-w-h-012 {
+  width: 350px;
+  height: 323px;
+
+  margin-bottom: 10px;
+}
+
+.card-w-h-345 {
+  width: 350px;
+  height: 348px;
+
+  margin-top: 10px;
+}
+
+.number {
+  margin-bottom: 40px;
+
+  font-size: 64px;
+  line-height: 1;
 }
