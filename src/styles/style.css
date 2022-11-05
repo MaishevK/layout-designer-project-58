@@ -37,6 +37,14 @@
   font-size: 16px;
 }
 
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
 .fs-34 {
   font-size: 34px;
 }
@@ -45,8 +53,16 @@
   font-size: 52px;
 }
 
+.fs-60 {
+  font-size: 60px;
+}
+
 .lineheight {
   line-height: 1.6em;
+}
+
+.lineheight-1em2 {
+  line-height: 1.2em;
 }
 
 .color-dark {
@@ -109,7 +125,7 @@
   font-weight: 700;
 }
 
-.disp-block {
+.d-block {
   display: block;
 }
 
@@ -125,8 +141,50 @@
   padding: 100px 165px;
 }
 
+.hei-705 {
+  height: 705px;
+}
+
 .section-text-align {
   text-align: center;
+}
+
+.center {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.orange {
+  color: var(--main);
+}
+
+.text {
+  width: 1110px;
+}
+
+.header-text {
+  position: relative;
+  top: 196px;
+}
+
+.header-image {
+  position: absolute;
+  top: 55px;
+  right: -105px;
+
+  height: 525px;
+}
+
+.header-p1 {
+  width: 540px;
+}
+
+.header-p2 {
+  position: relative;
+  top: 34px;
+  left: 570px;
+
+  width: 540px;
 }
 
 .header::before {
@@ -147,49 +205,9 @@
   content: "";
 }
 
-.center {
-  width: max-content;
-  margin: 0 auto;
-}
-
-.orange {
-  color: var(--main);
-}
-
-.text {
-  position: absolute;
-  top: 178px;
-
-  width: 1110px;
-}
-
-.header-text {
-  position: relative;
-}
-
-.header-image {
-  position: absolute;
-  top: 55px;
-  right: -105px;
-
-  height: 525px;
-}
-
-.text-p1 {
-  width: 540px;
-}
-
-.p2 {
-  position: relative;
-  top: 34px;
-  left: 570px;
-
-  width: 540px;
-}
-
 .button {
-  position: relative;
-  top: 32px;
+  position: absolute;
+  top: 209px;
 
   padding: 12px 24px;
 
@@ -256,6 +274,12 @@
   background-color: var(--lite);
 }
 
+.s-2 .card:hover {
+  position: relative;
+  top: -4px;
+  left: 4px;
+}
+
 .card-w-h-012 {
   width: 350px;
   height: 323px;
@@ -275,4 +299,45 @@
 
   font-size: 64px;
   line-height: 1;
+}
+
+.main-s-3 {
+  position: relative;
+  height: 905px;
+}
+
+.s-3-image {
+  height: 434px;
+
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.main-s-3-h12 {
+  margin: 100px 0 20px;
+  padding: 5px 10px;
+
+  color: var(--lite);
+
+  background-color: var(--bright);
+}
+
+.column-2 {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.hei-434 {
+  height: 434px;
+}
+
+.bi-avoid {
+  break-inside: avoid;
+}
+
+.pl-38 {
+  padding-left: 38px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
 }
