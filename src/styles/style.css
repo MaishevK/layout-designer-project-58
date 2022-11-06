@@ -10,6 +10,11 @@
   src: url("../fonts/Neucha-Regular.ttf");
 }
 
+* {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
 :root {
   --white: #fff;
   --white-transl: #d7ccc0;
@@ -57,27 +62,23 @@
   font-size: 60px;
 }
 
+.lineheight-1 {
+  line-height: 1em;
+}
+
+.lineheight-1em2 {
+  line-height: 1.2em;
+}
+
 .lineheight {
   line-height: 1.6em;
 }
 
-.lineheight-1em2 {
-  line-height: 1.2em;
-}
-
-.color-dark {
-  color: var(--dark);
-}
-
-.color-lite {
-  color: var(--lite);
-}
-
-.lineheight-1em2 {
-  line-height: 1.2em;
-}
-
-.h-font {
+.h-font,
+h1,
+h2,
+h3 {
+  color: var(--main);
   font-weight: 400;
   font-family: Neucha, sans-serif;
   line-height: 1.2em;
@@ -90,15 +91,26 @@
   line-height: 1.6em;
 }
 
-.h1-fs {
+.color-dark {
+  color: var(--dark);
+}
+
+.color-lite {
+  color: var(--lite);
+}
+
+.h1-fs,
+h1 {
   font-size: 72px;
 }
 
-.h2-fs {
+.h2-fs,
+h2 {
   font-size: 60px;
 }
 
-.h3-fs {
+.h3-fs,
+h3 {
   font-size: 34px;
 }
 
@@ -121,6 +133,10 @@
   text-decoration: none;
 }
 
+.fw-normal {
+  font-weight: 400;
+}
+
 .fw-bold {
   font-weight: 700;
 }
@@ -131,18 +147,20 @@
 
 .section {
   width: 1440px;
-  height: 914px;
 }
 
 .content {
   position: relative;
 
-  height: 714px;
   padding: 100px 165px;
 }
 
 .hei-705 {
   height: 705px;
+}
+
+.hei-714 {
+  height: 714px;
 }
 
 .section-text-align {
@@ -179,14 +197,6 @@
   width: 540px;
 }
 
-.header-p2 {
-  position: relative;
-  top: 34px;
-  left: 570px;
-
-  width: 540px;
-}
-
 .header::before {
   position: absolute;
   top: 0;
@@ -214,6 +224,10 @@
   color: var(--lite);
 
   background-color: var(--main);
+}
+
+.button:hover {
+  background-color: peru;
 }
 
 .s-1-p {
@@ -303,6 +317,7 @@
 
 .main-s-3 {
   position: relative;
+
   height: 905px;
 }
 
@@ -317,8 +332,6 @@
   padding: 5px 10px;
 
   color: var(--lite);
-
-  background-color: var(--bright);
 }
 
 .column-2 {
@@ -340,4 +353,55 @@
 
 .pb-30 {
   padding-bottom: 30px;
+}
+
+.main-s-4 {
+  position: relative;
+  top: 0;
+}
+
+.main-s-4::before {
+  position: absolute;
+  top: 0;
+  z-index: 300;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+
+  content: "";
+}
+
+.bg-bright {
+  background-color: var(--bright);
+}
+
+.color-whitetr {
+  color: var(--white-transl);
+}
+
+.main-s-4-h1 {
+  position: relative;
+  top: 0;
+
+  margin: 90px 0 20px;
+  padding: 5px 10px;
+
+  color: var(--bright);
+
+  background-color: var(--white);
+}
+
+.padv-30 {
+  padding: 30px 0;
+}
+
+.s-4-img {
+  position: relative;
+  right: 38px;
 }
