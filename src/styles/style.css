@@ -235,7 +235,7 @@ h3 {
 }
 
 .button {
-margin-top: 51px;
+  margin-top: 51px;
   padding: 12px 24px;
 
   color: var(--lite);
@@ -274,7 +274,6 @@ margin-top: 51px;
 
 .section-navigator {
   position: relative;
- /* top: -120px;*/
 }
 
 .s-2 {
