@@ -38,12 +38,20 @@
   margin: 0;
 }
 
-.fs-16 {
-  font-size: 16px;
+.fs-12 {
+  font-size: 12px;
 }
 
 .fs-14 {
   font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
 }
 
 .fs-24 {
@@ -378,6 +386,14 @@ h3 {
   padding: 30px 0;
 }
 
+.pad-15 {
+  padding: 15px;
+}
+
+.pad-55 {
+  padding: 55px;
+}
+
 .s-4 {
   position: relative;
 }
@@ -388,4 +404,50 @@ h3 {
 
   margin: 90px 0 20px;
   padding: 5px 10px;
+}
+
+.form {
+  padding: 38px 55px 40px;
+}
+
+.textform {
+  box-sizing: border-box;
+
+  width: 423px;
+  height: 50px;
+
+  border: 0;
+}
+
+.email-button {
+  position: relative;
+
+  width: 70px;
+  height: 50px;
+
+  padding: 0;
+
+  background-color: var(--main);
+  border: 0;
+}
+
+.email-button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  margin: 15px 25px;
+
+  background-image: url("..//files/send.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  content: "";
+}
+
+.contact {
+  margin-top: 60px;
 }
