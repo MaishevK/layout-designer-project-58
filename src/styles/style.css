@@ -46,10 +46,6 @@
 
 .fs-60 { font-size: 60px; }
 
-.lineheight-1 { line-height: 1em; }
-
-.lineheight-1em2 { line-height: 1.2em; }
-
 .font-neucha,
 h1,
 h2,
@@ -62,10 +58,13 @@ h3 {
 
 .font-os {
   color: var(--dark);
-  font-size: 16px;
   font-family: OpenSans-Regular, sans-serif;
   line-height: 1.6em;
 }
+
+.lineheight-1 { line-height: 1em; }
+
+.lineheight-1em2 { line-height: 1.2em; }
 
 .fw-normal { font-weight: 400; }
 
@@ -171,7 +170,7 @@ h3 {
   height: 793px;
 }
 
-.section1-p { margin: 27px 0; }
+.section1-p { margin: 29px 0; }
 
 .section1-video {
   position: absolute;
@@ -180,7 +179,7 @@ h3 {
 
 .section-navigator { position: relative; }
 
-.main-section2 { padding-top: 100px; }
+.main-section2 { padding-top: 118px; }
 
 .flex-container { display: flex; }
 
